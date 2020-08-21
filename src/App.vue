@@ -1,17 +1,53 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <select name="" id="" v-model="sekcja" style="margin-bottom:20px">
+      <option value="ART1K">ART1K</option>
+      <option value="ART2K">ART2K</option>
+      <option value="macro1K">macro1K</option>
+      <option value="macro2K">macro2K</option>
+    </select>
+
+
+    <ART1K v-if="sekcja=='ART1K'"></ART1K>
+    <ART2K v-if="sekcja=='ART2K'"></ART2K>
+    <macro1K v-if="sekcja=='macro1K'"></macro1K>
+    <macro2K v-if="sekcja=='macro2K'"></macro2K>
+
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue';
+import ART1K from './components/ART1K.vue';
+import ART2K from './components/ART2K.vue';
+import macro1K from './components/macro1K.vue';
+import macro2K from './components/macro2K.vue';
+
+
+
 
 export default {
+  data(){
+    return{
+      sekcja:'ART1K',
+      tryb:'ART1K'
+    }
+  },
   name: 'App',
   components: {
-    HelloWorld
+    ART1K,ART2K,macro1K,macro2K
+  },
+  watch:{
+    sekcja(val){
+      localStorage.sekcja  = val
+    }
+  },
+  mounted(){
+
+if (localStorage.sekcja){
+  this.sekcja = localStorage.sekcja
+}
   }
 }
 </script>
