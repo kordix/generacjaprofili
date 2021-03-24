@@ -5,6 +5,8 @@
       <option value="ART2K">ART2K</option>
       <option value="macro1K">macro1K</option>
       <option value="macro2K">macro2K</option>
+      <option value="generator">generator</option>
+
     </select>
 
 
@@ -12,6 +14,8 @@
     <ART2K v-if="sekcja=='ART2K'"></ART2K>
     <macro1K v-if="sekcja=='macro1K'"></macro1K>
     <macro2K v-if="sekcja=='macro2K'"></macro2K>
+    <generator v-if="sekcja=='generator'"></generator>
+
 
 
   </div>
@@ -23,6 +27,8 @@ import ART1K from './components/ART1K.vue';
 import ART2K from './components/ART2K.vue';
 import macro1K from './components/macro1K.vue';
 import macro2K from './components/macro2K.vue';
+import generator from './components/GENERATOR.vue';
+
 
 
 
@@ -36,7 +42,7 @@ export default {
   },
   name: 'App',
   components: {
-    ART1K,ART2K,macro1K,macro2K
+    ART1K,ART2K,macro1K,macro2K,generator
   },
   watch:{
     sekcja(val){

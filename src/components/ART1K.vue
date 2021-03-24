@@ -16,11 +16,20 @@
         </tr>
       </tbody>
     </table>
+
+    <textarea name="" id="" cols="30" rows="10" v-model="artfou">
+    </textarea>
+
+
+    <textarea name="" id="" cols="30" rows="10" v-model="article">
+
+      
+    </textarea>
   </div>
 </template>
 
 <script>
-import kolory from '../kolory.js'
+import kolory from '../kolory.js';
 
 
 export default {
@@ -28,42 +37,73 @@ export default {
     return {
       output: [],
       profile: [
-        // { kod: "3110", cena: 1.95, cenab: 0.94},
-        // { kod: "5524", cena: 1.84, cenab: 1.35 },
-        // { kod: "5525", cena: 3.11, cenab: 1.35 },
-        // { kod: "5526", cena: 2.96, cenab: 1.44 },
-        // { kod: "6124", cena: 1.55, cenab: 1.02 },
-        // { kod: "6126", cena: 1.95, cenab: 0.98 },
-        // { kod: "6128", cena: 1.93, cenab:0.95  },
-        // { kod: "6130", cena: 1.93, cenab: 0.96 },
-        // { kod: "6132", cena: 1.93, cenab: 0.96 },
-       // { kod: "8300", cena: 3.58, cenab: 2.33 },
-        //{ kod: "8309", cena: 3.3, cenab: 3.3 },
-        // { kod: "5869", cena: 3.86, cenab: 3.3 },
         // {
-        //   "kod": 3284,
-        //   opis:'Łącznik H 3284',
-        //   "cenab": 0.62,
-        //   "cena": 1.37
+        //   "kod": 7134,
+        //   opis:'7134 ',
+        //   // "cenab": 1.03,
+        //   "cena": 1.3
         // },
         // {
-        //   "kod": 5204,
-        //   opis:'Łącznik statyczny 5204',
-        //   "cenab": 3.36,
-        //   "cena": 4.69
+        //   "kod": 7248,
+        //   opis:'7248 ',
+        //   // "cenab": 1.03,
+        //   "cena": 1.21
+        // },
+        // {
+        //   "kod": 7142,
+        //   opis:'7142 ',
+        //   // "cenab": 1.03,
+        //   "cena": 1.66
+        // },
+        // {
+        //   "kod": 7116,
+        //   opis:'7116 ',
+        //   // "cenab": 1.03,
+        //   "cena": 1.65
+        // },
+        // {
+        //   "kod": 7180,
+        //   opis:'7180 ',
+        //   // "cenab": 1.03,
+        //   "cena": 1.64
+        // },
+        // {
+        //   "kod": 7162,
+        //   opis:'7162 ',
+        //   // "cenab": 1.03,
+        //   "cena": 1.39
+        // },
+        // {
+        //   "kod": 7146,
+        //   opis:'7146 ',
+        //   // "cenab": 1.03,
+        //   "cena": 1.7
+        // },
+        // {
+        //   "kod": 7248,
+        //   opis:'7248 ',
+        //   // "cenab": 1.03,
+        //   "cena": 1.79
         // },
         {
-          "kod": 2325,
-          opis:'Ćwierćwałek 2325 ',
-          "cenab": 0,
-          "cena": 1.72
-        }
-
-
+          "kod": 3325,
+          opis:'Okapnik 3325 ',
+          // "cenab": 1.03,
+          "cena": 1.79
+        },
+        {
+          "kod": 3326,
+          opis:'Okapnik 3326 ',
+          // "cenab": 1.03,
+          "cena": 2.27
+        },
 
       ],
       kolory: kolory,
-      trybkoloru: 2
+      article:'',
+      artfou:'',
+      trybkoloru: 2,
+      inserty:''
     };
   },
   methods: {
@@ -113,7 +153,70 @@ export default {
         this.output.push({ kod: kod, opis: opis,cena:cena });
         }
       }
+
+      this.generujarticle();
+      this.generujartfou();
+
     },
+    generujarticle(){
+
+      for(let element of this.output){
+        this.article += 'INSERT INTO article (code, ftimestamp, descriptio, categorie, unite, prtarif, prcourant, ne, valorise, marge, pv1, pv2,';
+        this.article += 'pv3, qte2, qte3, forfait1,delaicli, compose, artnegoce, inclcompos, dxf, dxfdoc, dxffou, typeprix, largeurs, hauteurs, lmin, hmin, profcomp, profint1, ';
+        this.article += 'profint2, profext1, profext2, barrette1, barrette2, barrette3, barrette4, nbarrette1, nbarrette2, nbarrette3, ';
+        this.article += 'nbarrette4, alaquer, laque2, qlaq2, laquer1, laquer2, laquer3, societe, dxfplan, sansclr, perte, poids, prixkg, desactive,';
+        this.article += 'datedesac, comptea, comptes, compte55, compte196, navision, codenav, dxfpicture, systeme, formulef, codefou, artfou, datecreate, ';
+        this.article += 'dimension, prixnet, pv1cover, forf1cover, necover, valcover, libre1, libre2, fichierbmp, surface, champs, cptlarg, cpthaut, ';
+        this.article += 'labour, locked, translate, stkmin01, stkmin02, stkmin03, stkmin04, stkmin05, stkmin06, stkmin07, stkmin08, stkmin09, ';
+        this.article += 'stkmin10, stkmin11, stkmin12, stkmax01, stkmax02, stkmax03, stkmax04, stkmax05, stkmax06, stkmax07, stkmax08, stkmax09,';
+        this.article += 'stkmax10, stkmax11, stkmax12, periode, plan, colisage, controle, prepa, horsstock, modifie, composplan, composcfou, devis, ';
+        this.article += 'propcde, coeffres, stockoptim, netiq, imput, invisdevis, surmesure, formule, qlaq1, transfert, stkpos, stknumcas, stkqtecas, ';
+        this.article += 'colis, colis2, stkdateout, verifier, promo, prccolis, prccolis2, coeffcas, catcas, gencode, cletri, xml, poste, artbos, ';
+        this.article += 'lastupdate, avantprod, avantlivr, web, nostockdec, withfail, noweb, level, info, recno, categorie2, categorie3, blade, bl_wearlen)';
+        this.article += "VALUES (\'";
+        this.article += element.kod;
+        this.article += "\', 0,\'";
+        this.article += element.opis;
+        this.article += "\', NULL, \'M\', 24.07806, 24.07806, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, 0, NULL, NULL, 0, 0, 0,";
+        this.article += "NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 0, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \'0000-00-00\', ";
+        this.article += 'NULL, NULL, NULL, NULL, 38, NULL, 29, NULL, NULL, NULL, NULL, \'0000-00-00\', 0, 0, 0, 0, 0, 0, 0, NULL, NULL, 0, 0, 0, 0, 0, 0, NULL, ';
+        this.article += '0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, NULL, 28, NULL, 0, 0, NULL, 0, 0, NULL, NULL, 38, NULL, NULL, ';
+        this.article += "\'0000-00-00\', 0, 0, 0, 0, 0, 0, NULL, NULL, 38, NULL, 38, \'0000-00-00\', 0, 0, 0, 0, 0, 0, 0, NULL, default, NULL, NULL, 0, 0);";
+        
+
+    this.article += "\r\n";
+
+      }
+
+
+
+    },
+    generujartfou(){
+
+
+            for(let element of this.output){
+
+       this.artfou += 'INSERT INTO artfou (article, codefou, numero, artfou, livraison, delai, cdemin, q1, q2, q3, q4, padev1, padev2, padev3, padev4, rem1, rem2,';
+      this.artfou += 'rem3, rem4, devise, pafb, frais, pr, idfourn, idfourn2, idfourn3, idfourn4, prixkg, comment, codeedi, couleur, libre1, libre2, livcli,'; 
+      this.artfou += 'delaicli, recno) VALUES';
+      this.artfou += "(\'";
+      this.artfou += element.kod;
+      this.artfou += "\', \'GEALAN\', 0, \'";
+      this.artfou += element.kod;
+      this.artfou += "\', 0, 0, 0, 1, 0, 0, 0, ";
+      this.artfou += element.cena;
+      
+      this.artfou += ", 0, 0, 0, 0, 0, 0, 0, \'EUR\', 0, 1.08, 0, \'\', \'\', \'\', \'\', 0, \'\', \'\', \'\'," ;
+      this.artfou += "\'\', \'\', 0, 0, default);";
+    this.artfou += "\r\n";
+
+
+            }
+
+
+    },
+
+
     copy() {
       this.selectElementContents(document.getElementById("tabela"));
     }
