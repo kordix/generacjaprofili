@@ -17,14 +17,18 @@
       </tbody>
     </table>
 
-    <textarea name="" id="" cols="30" rows="10" v-model="artfou">
-    </textarea>
-
-
+  
+   <p><b>Article</b></p>  
     <textarea name="" id="" cols="30" rows="10" v-model="article">
-
-      
     </textarea>
+
+    <p></p>
+
+<p><b>Artfou</b></p>
+  <label for="">Artfou</label>
+      <textarea name="" id="" cols="30" rows="10" v-model="artfou">
+    </textarea>
+
   </div>
 </template>
 

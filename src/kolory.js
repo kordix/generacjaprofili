@@ -81,6 +81,8 @@ let kolory =
       "descriptio": "OBUSTRONNY - Antracyt struktura",
       "artykul": "tak",
       "strona": "2K",
+      rdzen:"szary",
+      skrot:"1R",
       grupa: 0
     },
     {
@@ -89,6 +91,8 @@ let kolory =
       "descriptio": "OBUSTRONNY - Antracyt gładki",
       "artykul": "tak",
       "strona": "2K",
+      rdzen:"szary",
+      skrot:"6V",
       grupa: 0
     },
     {
@@ -212,30 +216,6 @@ let kolory =
       "strona": "1K", grupa: 10
     },
     {
-      "CODE": 134364006,
-      "referencja": "13 4364006",
-      "descriptio": "ZEWNĘTRZNY - RealWood® stalowo niebieski pod. do RAL 5011",
-      "strona": "1K", grupa: 10
-    },
-    {
-      "CODE": 134364021,
-      "referencja": "13 4364021",
-      "descriptio": "ZEWNĘTRZNY - RealWood® zielony pod. do RAL 6009",
-      "strona": "1K", grupa: 10
-    },
-    {
-      "CODE": 134364047,
-      "referencja": "13 4364047",
-      "descriptio": "ZEWNĘTRZNY - RealWood szary kwarcytowy pod. do RAL 7039",
-      "strona": "1K", grupa: 10
-    },
-    {
-      "CODE": 134367010,
-      "referencja": "13 4367010",
-      "descriptio": "ZEWNĘTRZNY - Ciemno-brązowy",
-      "strona": "1K", grupa: 10
-    },
-    {
       "CODE": 134367047,
       "referencja": "13 4367047",
       "descriptio": "ZEWNĘTRZNY - Szary kwarcowy DEKO RAL 7039 gładki",
@@ -248,12 +228,6 @@ let kolory =
       "strona": "1K", grupa: 10
     },
     {
-      "CODE": 134467062,
-      "referencja": "13 4467062",
-      "descriptio": "ZEWNĘTRZNY - Czarny gładki (Schwarz Glatt)",
-      "strona": "1K", grupa: 10
-    },
-    {
       "CODE": 134563081,
       "referencja": "13 4563081",
       "descriptio": "ZEWNĘTRZNY - Dąb bielony",
@@ -263,12 +237,6 @@ let kolory =
       "CODE": 134564053,
       "referencja": "13 4564053",
       "descriptio": "ZEWNĘTRZNY - RealWood® czysty biały 9010",
-      "strona": "1K", grupa: 10
-    },
-    {
-      "CODE": 134564054,
-      "referencja": "13 4564054",
-      "descriptio": "ZEWNĘTRZNY - RealWood® kremowo biały pod. do RAL 9001",
       "strona": "1K", grupa: 10
     },
     {
@@ -288,12 +256,6 @@ let kolory =
       "referencja": "13 49240",
       "descriptio": "ZEWNĘTRZNY - Winchester XA",
       "strona": "1K", grupa: 0
-    },
-    {
-      "CODE": 13500405,
-      "referencja": "13 500405",
-      "descriptio": "ZEWNĘTRZNY - Czarno niebieski DEKO RAL 5004",
-      "strona": "1K", grupa: 10
     },
     {
       "CODE": 13500705,
@@ -536,30 +498,8 @@ let kolory =
       "CODE": 234364003,
       "referencja": "23 4364003",
       "descriptio": "OBUSTRONNY - RealWood®szary antracytowy pod. do RAL 7016",
-      "strona": "2K", grupa: 10
-    },
-    {
-      "CODE": 234364006,
-      "referencja": "23 4364006",
-      "descriptio": "OBUSTRONNY - RealWood® stalowo niebieski pod. do RAL 5011",
-      "strona": "2K", grupa: 10
-    },
-    {
-      "CODE": 234364021,
-      "referencja": "23 4364021",
-      "descriptio": "OBUSTRONNY - RealWood® zielony pod. do RAL 6009",
-      "strona": "2K", grupa: 10
-    },
-    {
-      "CODE": 234364047,
-      "referencja": "23 4364047",
-      "descriptio": "OBUSTRONNY - RealWood szary kwarcytowy pod. do RAL 7039",
-      "strona": "2K", grupa: 10
-    },
-    {
-      "CODE": 234367010,
-      "referencja": "23 4367010",
-      "descriptio": "OBUSTRONNY - Ciemno-brązowy",
+      "rdzen":"szary",
+      skrot:"6G",
       "strona": "2K", grupa: 10
     },
     {
@@ -575,12 +515,6 @@ let kolory =
       "strona": "2K", grupa: 10
     },
     {
-      "CODE": 234467062,
-      "referencja": "23 4467062",
-      "descriptio": "OBUSTRONNY - Czarny gładki (Schwarz Glatt)",
-      "strona": "2K", grupa: 10
-    },
-    {
       "CODE": 234563081,
       "referencja": "23 4563081",
       "descriptio": "OBUSTRONNY - Dąb bielony",
@@ -590,12 +524,6 @@ let kolory =
       "CODE": 234564053,
       "referencja": "23 4564053",
       "descriptio": "OBUSTRONNY - RealWood® czysty biały 9010",
-      "strona": "2K", grupa: 10
-    },
-    {
-      "CODE": 234564054,
-      "referencja": "23 4564054",
-      "descriptio": "OBUSTRONNY - RealWood® kremowo biały pod. do RAL 9001",
       "strona": "2K", grupa: 10
     },
     {
@@ -615,12 +543,6 @@ let kolory =
       "referencja": "23 49240",
       "descriptio": "OBUSTRONNY - Winchester XA",
       "strona": "2K", grupa: 0
-    },
-    {
-      "CODE": 23500405,
-      "referencja": "23 500405",
-      "descriptio": "OBUSTRONNY - Czarno niebieski DEKO RAL 5004",
-      "strona": "2K", grupa: 10
     },
     {
       "CODE": 23500705,
@@ -656,12 +578,16 @@ let kolory =
       "CODE": 23701205,
       "referencja": "23 701205",
       "descriptio": "OBUSTRONNY - Szary bazaltowy DEKO RAL 7012",
+      "rdzen":"szary",
+      skrot:"2T",
       "strona": "2K", grupa: 10
     },
 
     {
       "CODE": 237021097,
       "referencja": "23 7021097",
+      rdzen:"szary",
+      skrot:"7S",
       "descriptio": "OBUSTRONNY - Czarny DEKO RAL 7021 gładki 2",
       "strona": "2K", grupa: 10
     },
@@ -743,6 +669,56 @@ let kolory =
       "referencja": 28,
       "descriptio": "OBUSTRONNY - Dąb bagienny",
       "strona": "2K", grupa: 0
+    },
+    {
+      "CODE": 134566001,
+      "referencja": "13 4566001",
+      "descriptio": "ZEWNĘTRZNY - DEKO RAL 9010 Czysty biały mat",
+      "strona": "1K", grupa: 10
+    },
+    {
+      "CODE": 234566001,
+      "referencja": "23 4566001",
+      "descriptio": "OBUSTRONNY - DEKO RAL 9010 Czysty biały mat",
+      "strona": "2K", grupa: 10
+    },
+    {
+      "CODE": 134566015,
+      "referencja": "13 4566015",
+      "descriptio": "ZEWNĘTRZNY - DEKO RAL 9001 kremowo biały mat",
+      "strona": "1K", grupa: 10
+    },
+    {
+      "CODE": 234566015,
+      "referencja": "23 4566015",
+      "descriptio": "OBUSTRONNY - DEKO RAL 9001 kremowo biały mat",
+      "strona": "2K", grupa: 10
+    },
+    {
+      "CODE": 134366010,
+      "referencja": "13 4366010",
+      "descriptio": "ZEWNĘTRZNY - Czarno-brązowy mat",
+      "strona": "1K", grupa: 10
+    },
+    {
+      "CODE": 234366010,
+      "referencja": "23 4366010",
+      "descriptio": "OBUSTRONNY - Czarno-brązowy mat",
+      "strona": "2K", grupa: 10
+    },
+    {
+      "CODE": 134466062,
+      "referencja": "13 4466062",
+      "descriptio": "ZEWNĘTRZNY - Czarny mat",
+      "strona": "1K", grupa: 10
+    },
+    {
+      "CODE": 234466062,
+      "referencja": "23 4466062",
+      "descriptio": "OBUSTRONNY - Czarny mat",
+      "rdzen":"szary",
+      skrot:"7I",
+      "strona": "2K", grupa: 10
     }
   ]
 

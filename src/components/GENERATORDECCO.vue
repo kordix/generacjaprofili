@@ -53,8 +53,10 @@
 </template>
 
 <script>
-import kolory from "../kolory.js";
+import kolory from "../kolorydecco.js";
 import profile from "../profileall.js";
+
+//6051-0-2-1K-1306
 
 export default {
   data() {
@@ -64,17 +66,93 @@ export default {
       artfou: "",
       profile: [
         {
-          kod: 2325,
-          opis: "Profil maskujący 2325",
+          kod: 8210,
+          opis: "Ościeżnica 8210",
           makro: "nie",
-          typ: "1K2",
-          cenab: 1.01,
-          // cena1k: 10.03,
-          cena2k: 1.99,
+          typ: "2K",
+          cenab: 3,
+          cena1k: 4,
+          cena2k: 5,
           uszczelkabiale: "00",
           uszczelka: " ",
         },
-        
+        {
+          kod: 8224,
+          opis: "Skrzydło 8224",
+          makro: "nie",
+          typ: "2K",
+       cenab: 3,
+          cena1k: 4,
+          cena2k: 5,
+          uszczelkabiale: "00",
+          uszczelka: " ",
+        },
+        {
+          kod: 8225,
+          opis: "Skrzydło 8225",
+          makro: "nie",
+          typ: "2K",
+          cenab: 3,
+          cena1k: 4,
+          cena2k: 5,
+          uszczelkabiale: "00",
+          uszczelka: " ",
+        },
+        {
+          kod: 8226,
+          opis: "Skrzydło 8226",
+          makro: "nie",
+          typ: "2K",
+          cenab: 3,
+          cena1k: 4,
+          cena2k: 5,
+          uszczelkabiale: "00",
+          uszczelka: " ",
+        },
+        {
+          kod: 8227,
+          opis: "Skrzydło 8227",
+          makro: "nie",
+          typ: "2K",
+          cenab: 3,
+          cena1k: 4,
+          cena2k: 5,
+          uszczelkabiale: "00",
+          uszczelka: " ",
+        },
+        {
+          kod: 8230,
+          opis: "Skrzydło 8230",
+          makro: "nie",
+          typ: "2K",
+          cenab: 3,
+          cena1k: 4,
+          cena2k: 5,
+          uszczelkabiale: "00",
+          uszczelka: " ",
+        },
+        {
+          kod: 8236,
+          opis: "Skrzydło 8236",
+          makro: "nie",
+          typ: "2K",
+          cenab: 3,
+          cena1k: 4,
+          cena2k: 5,
+          uszczelkabiale: "00",
+          uszczelka: " ",
+        },
+        {
+          kod: 8232,
+          opis: "Słupek ruchomy 8232",
+          makro: "nie",
+          typ: "2K",
+          cenab: 3,
+          cena1k: 4,
+          cena2k: 5,
+          uszczelkabiale: "00",
+          uszczelka: " ",
+        }
       ],
       kolory: kolory,
       strony: [
@@ -108,21 +186,20 @@ export default {
       }
     },
     generate() {
+//6051-0-2-1K-1306
+
+console.log(this.profile);
+console.log(this.kolory);
       for (let profil of this.profile) {
         for (let kolor of this.kolory) {
-          let kod = "GE_" + profil.kod + "" + kolor.CODE;
-          let referencja = profil.kod + "" + kolor.referencja;
-          let opis = profil.opis + " " + " " + kolor.descriptio;
+          let kod = profil.kod + "-" + kolor.CODE;
+          let referencja = profil.kod + "-" + kolor.referencja;
+          let opis = profil.opis + " " + " " + kolor.opis;
 
           referencja = referencja.replace(" ", profil.uszczelka);
 
           if (referencja.length < 10 && profil.uszczelka != " ") {
             referencja += profil.uszczelka;
-          }
-
-          if (kolor.rdzen == "szary" && profil.pokurwioneantracyty == true) {
-            referencja =
-              profil.kod + profil.uszczelka + kolor.skrot + kolor.skrot + "2Z";
           }
 
           let cena = 0;

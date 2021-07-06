@@ -27,7 +27,7 @@ import ART1K from './components/ART1K.vue';
 import ART2K from './components/ART2K.vue';
 import macro1K from './components/macro1K.vue';
 import macro2K from './components/macro2K.vue';
-import generator from './components/GENERATOR.vue';
+import generator from './components/GENERATORDECCO.vue';
 
 
 

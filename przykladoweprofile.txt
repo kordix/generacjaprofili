@@ -1,0 +1,27 @@
+
+
+1K2  - ARTYKUŁY
+GE_3325
+
+UPDATE profcol SET article = REPLACE(article,'GE_3325','xxx') WHERE profil = 'xxx';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BIAŁE - DEKOR UMIEJSCOWIONY WEWNĄTRZ , NP . LISTWA
+GE_7120
+
+
+BIAŁE - DEKOR UMIEJSCOWIONY ZEWNĄTRZ - MAKRO
+GE_8300

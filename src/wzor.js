@@ -1,0 +1,68 @@
+profile: [
+    {
+      kod: 6050,
+      opis: "Słupek",
+      makro: "tak",
+      typ: "2K",
+      cenab: 3.8,
+      cena1k: 4.59,
+      cena2k: 5.55,
+      uszczelkabiale:'00U',
+      uszczelka:'Q'
+    },
+    // {
+    //   kod: 2222,
+    //   opis: "Skrzydlo ",
+    //   makro: "tak",
+    //   typ: "2K",
+    //   cenab: 2.3,
+    //   cena1k: 2.77,
+    //   cena2k: 3.62,
+    //   uszczelkabiale:'00U',
+    //   uszczelka:'Q'
+    // },
+    // {
+    //   kod: 2312,
+    //   opis: "Profil kątowy ",
+    //   makro: "tak",
+    //   typ: "1K2",
+    //   cenab: 2.3,
+    //   cena1k: 2.77,
+    //   cena2k: 3.62,
+    //   uszczelkabiale:'00',
+    //   uszczelka:' '
+    // },
+    // {
+    //   kod: 3333,
+    //   opis: "Poszerzenie ",
+    //   makro: "tak",
+    //   typ: "2K",
+    //   cenab: 999,
+    //   cena1k: 3.95,
+    //   cena2k: 5.1,
+    //   uszczelkabiale:'87S',
+    //   uszczelka:'S'
+    // },
+    // {
+    //   kod: 2224,
+    //   opis: "Prowadnica 2224",
+    //   makro: "nie",
+    //   typ: "1K2",
+    //   cenab: 3.09,
+    //   // cena1k: 99999,
+    //   cena2k: 4.94,
+    //   uszczelkabiale: "00G",
+    //   uszczelka: "S",
+    // },
+    // {
+    //   kod: 5555,
+    //   opis: "Artykuł z całym kolorem",
+    //   makro: "tak",
+    //   typ: "1K1",
+    //   cenab: 999,
+    //   cena1k: 5,
+    //   uszczelkabiale:'00',
+    //   uszczelka:' '
+    //   // cena2k: 6.1,
+    // },
+  ],
